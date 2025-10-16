@@ -1,6 +1,6 @@
 # 🔐 个人密码管理系统
 
-一个基于 PHP + MySQL 的现代化密码管理系统，支持分类管理、加密存储和安全访问。
+一个基于 PHP + MySQL 的现代化个人密码管理系统，支持分类管理、加密存储和安全访问。
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![PHP Version](https://img.shields.io/badge/php-%3E%3D7.4-green.svg)
@@ -79,8 +79,11 @@
 A: 可以留意一下本库或者下方地址，等我做完就发出来。
 https://www.dsjie375.cn/ 
 
-B：不会做开源，只是想分享，多多包涵。
-## [密码管理系统 GitHub](https://github.com/DSJIE375/password-manager)
+B：不懂做开源，只是想分享，有很多不足的地方请多多包涵，也可以到下方讨论地址留言。
+
+C：[密码管理系统 GitHub](https://github.com/DSJIE375/password-manager)
+
+D：[密码管理系统讨论地址](https://www.dsjie375.cn/index.php/2025/10/13/password-manager/)
 
 ## ❓ 常见问题
 
