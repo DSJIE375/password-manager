@@ -45,23 +45,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['platform_name'])) {
         VALUES (?, ?, ?, ?, ?, ?, ?)
     ");
     
+    // 只执行一次
     if ($stmt->execute([$user_id, $platform_name, $website_url, $username, $encrypted_password, $category_id, $notes])) {
         $success = "账号信息已成功保存！";
+        // 记录添加密码日志
+        logAction('PASSWORD_ADD', "添加密码条目 - 平台: {$platform_name}", $user_id);
         // 清空表单
         $_POST = array();
-        // 在成功保存密码条目后添加
-if ($stmt->execute([$user_id, $platform_name, $website_url, $username, $encrypted_password, $category_id, $notes])) {
-    $success = "账号信息已成功保存！";
-    // 记录添加密码日志
-    logAction('PASSWORD_ADD', "添加密码条目 - 平台: {$platform_name}", $user_id);
-    // 清空表单
-    $_POST = array();
-} else {
-    $error = "保存失败，请重试！";
-    logAction('PASSWORD_ADD_FAILED', "添加密码失败 - 平台: {$platform_name}", $user_id);
-}
     } else {
         $error = "保存失败，请重试！";
+        logAction('PASSWORD_ADD_FAILED', "添加密码失败 - 平台: {$platform_name}", $user_id);
     }
 }
 
