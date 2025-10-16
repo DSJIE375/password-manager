@@ -75,7 +75,8 @@
 
 # 🔐 怎么部署密码管理系统在自己的服务器？
 
-A: [前往页面：https://www.dsjie375.cn/index.php/2025/10/13/password-manager/](https://www.dsjie375.cn/index.php/2025/10/13/password-manager/) 留言免费获取。
+A: 可以留意一下本库或者下方地址，等我做完就发出来。
+https://www.dsjie375.cn/ 
 
 B：不会做开源，只是想分享，多多包涵。
 ## [密码管理系统 GitHub](https://github.com/DSJIE375/password-manager)
